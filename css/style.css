@@ -99,6 +99,16 @@ nav{
 .right_welcome{
     width: 50%;
 }
+
+.services{
+    color: #00cef0;
+    background: #4c4859;
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+
 footer{
     width: 100%;
     height: auto;
@@ -120,5 +130,20 @@ footer{
     font-size: 12px;
     font-weight: 900;
     cursor: pointer;
+}
 
+::-webkit-scrollbar-track
+{
+	border: 1px solid #4c4859;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+	background-color: #4c4859;	
 }
