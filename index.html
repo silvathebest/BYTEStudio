@@ -1,35 +1,123 @@
+<!--
+//INFO Правило 1 - все наши классы css называются с двумя нижними подчеркиваниями.
+//INFO Используем Jquery
+//INFO Прописываем тег alt у картинок (обязательно)
+-->
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Exo+2:400,700,800,900&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
-    <title>BYTEStudio</title>
-    <script src="js/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="title" content="Byte Studio - студия веб разработки и программного обеспеченья" />
+  <meta name="description" content="Хотите продающий сайт уже сегодня? Студия веб разработки Byte Studio создаст для вас красивый и продающий сайт." />
+  <meta name="author" content="Byte Studio">
+  <meta name="keywords" content="разработка, сайты, веб, студия, создать сайт, саратов, россия, быстро, без переплат, Саратов, область, Энгельс, недорого, бесплатно, скидки." />
+  <script src="https://use.fontawesome.com/e015611673.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <title>Byte Studio - студия веб разработки</title>
 </head>
 
 <body>
-    <?php require "blocks/header.php" ?>
-    <div class="welcome">
-        <div class="left_welcome">
-            <h2>BYTE Studio</h2>
-            <b>Разработка сайтов <br>
-                Любой сложности</b>
-            <p>Создание сайтов для любого вида бизнеса <br>
-                Разработка программного обеспечения <br>
-                Полная адаптивность под все устройства <br>
-                Настройка и сопровождение сайта <br>
-            </p>
-            <button>Связаться с нами</button>
+  <section>
+    <div class="heeader">
+      <div class="header__nav">
+        <div class="heeader__nav_main">
+          <div class="header__logo">
+            <!-- TODO Нарисовать норм логотип .png -->
+            <h2>Byte Studio</h2>
+          </div>
+          <div class="header__nav">
+            <ul>
+              <li class="nav__item active"><a href="#">Главная</a></li>
+              <li class="nav__item"><a href="#">Наши приеимущества</a></li>
+              <li class="nav__item"><a href="#">Портфолио</a></li>
+              <li class="nav__item"><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="header__social">
+            <i class="fa fa-vk" aria-hidden="true"></i>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
         </div>
-        <div class="right_welcome">
+      </div>
+      <div class="header__image__main">
+        <div class="header__image"></div>
+        <div class="header__image__content">
+          <div class="header__image__title">
+            <h2>Byte Studio</h2>
+            <div class="line__run">
+              <!-- TODO Придумать текст для бегущей строки -->
+              <p>Разработка сайтов</p>
+            </div>
+          </div>
+          <div class="header__image__phone">
+            <h4>+7 (908) 546 82 04</h4>
+            <h5>roy12612@gmail.com</h5>
+            <button class="but__call__back"></button>
+          </div>
         </div>
+        <div class="header__image__line"></div>
+      </div>
     </div>
-    <div class="services">
-        <h2>Наши услуги</h2>
+  </section>
+  <section id="count__site">
+    <div class="count__site">
+      <div class="count__site__title">
+        <h2>Создание сайтов в Саратове</h2>
+      </div>
+      <div class="count__site__blocks">
+        <div class="count__site__block">
+          <div class="circle">
+            <span></span>
+          </div>
+          <p>Выполнено нами за все время работы</p>
+        </div>
+        <div class="count__site__block">
+          <div class="circle">
+            <span></span>
+          </div>
+          <p>Среднее время на разработку сайта</p>
+        </div>
+        <div class="count__site__block">
+          <div class="circle">
+            <span></span>
+          </div>
+          <p>Средний опыт работы наших сотрудников</p>
+        </div>
+        <div class="count__site__block">
+          <div class="circle">
+            <span></span>
+          </div>
+          <p>Средняя посещаемость в месяц разработанных нами сайтов</p>
+        </div>
+        <div class="count__site__block">
+          <div class="circle">
+            <span></span>
+          </div>
+          <p>Потому что мы сдаем все в срок</p>
+        </div>
+      </div>
     </div>
-    <?php require "blocks/footer.php" ?>
+  </section>
+  <section id="service">
+    <div class="service__main">
+      <div class="service__main__line__before"></div>
+      <div class="service__main__line__after"></div>
+      <div class="service__studio">
+
+      </div>
+    </div>
+  </section>
+</body>
+<script>
+</script>
+
 </html>
