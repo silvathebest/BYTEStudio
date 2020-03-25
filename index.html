@@ -2,7 +2,6 @@
 //INFO Правило 1 - все наши классы css называются с двумя нижними подчеркиваниями.
 //INFO Используем Jquery
 //INFO Прописываем тег alt у картинок (обязательно)
-//TODO Поменять шрифт основной
 -->
 <!doctype html>
 <html lang="ru">
@@ -18,6 +17,9 @@
   <meta name="keywords" content="разработка, сайты, веб, студия, создать сайт, саратов, россия, быстро, без переплат, Саратов, область, Энгельс, недорого, бесплатно, скидки." />
   <script src="https://use.fontawesome.com/e015611673.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
   <script src="js/script.js"></script>
 
   <title>Byte Studio - студия веб разработки</title>
@@ -50,61 +52,22 @@
         </div>
       </div>
       <div class="header__image__main">
-        <div class="header__image"></div>
+        <div id="particles-js" class="header__image"></div>
         <div class="header__image__content">
           <div class="header__image__title">
             <h2>Byte Studio</h2>
             <div class="line__run">
               <!-- TODO Придумать текст для бегущей строки -->
-              <p>Разработка сайтов</p>
+              <p id="example2"></p>
             </div>
           </div>
           <div class="header__image__phone">
             <h4>+7 (908) 546 82 04</h4>
             <h5>roy12612@gmail.com</h5>
-            <button class="but__call__back"></button>
+            <button class="but__call__back">Заказать звонок</button>
           </div>
         </div>
         <div class="header__image__line"></div>
-      </div>
-    </div>
-  </section>
-  <section id="count__site">
-    <div class="count__site">
-      <div class="count__site__title">
-        <h2>Создание сайтов в Саратове</h2>
-      </div>
-      <div class="count__site__blocks">
-        <div class="count__site__block">
-          <div class="circle">
-            <span></span>
-          </div>
-          <p>Выполнено нами за все время работы</p>
-        </div>
-        <div class="count__site__block">
-          <div class="circle">
-            <span></span>
-          </div>
-          <p>Среднее время на разработку сайта</p>
-        </div>
-        <div class="count__site__block">
-          <div class="circle">
-            <span></span>
-          </div>
-          <p>Средний опыт работы наших сотрудников</p>
-        </div>
-        <div class="count__site__block">
-          <div class="circle">
-            <span></span>
-          </div>
-          <p>Средняя посещаемость в месяц разработанных нами сайтов</p>
-        </div>
-        <div class="count__site__block">
-          <div class="circle">
-            <span></span>
-          </div>
-          <p>Потому что мы сдаем все в срок</p>
-        </div>
       </div>
     </div>
   </section>
@@ -118,7 +81,26 @@
     </div>
   </section>
 </body>
+<script src="js/particles.min.js"></script>
 <script>
+  $('#example2').typeIt({
+      speed: 80,
+      autoStart: false,
+    }).tiType('Разработка ')
+    .tiPause(150)
+    .tiType('сайтов ')
+    .tiPause(350)
+    .tiType('любой сложности')
+    .tiSettings({
+      speed: 300
+    })
+    .tiType('...')
+    .tiPause(1200)
+    .tiSettings({
+      speed: 50
+    })
+    .tiDelete()
+    .tiType('Быстро и надежно.');
 </script>
 
 </html>
