@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Permanent+Marker&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Exo+2|Permanent+Marker&display=swap');
-.heeader {
+.header {
   display: flex;
   height: 400px;
 }
@@ -258,7 +259,7 @@ body {
   height: 100px;
   background: transparent;
   border: 0;
-  box-shadow: 0 0 6px 0px;
+  box-shadow: 0 0 6px 0;
   border-radius: 50%;
 }
 
