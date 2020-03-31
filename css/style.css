@@ -346,11 +346,16 @@ footer {
   margin-top: 100px;
   background: #222222;
   width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer i {
+  margin-left: 30px;
 }
 
 .footer__social {
   display: flex;
-  justify-content: space-around;
 }
 
 .footer__social i {
@@ -363,7 +368,14 @@ footer {
 
 .footer__social i:hover {
   transition: .5s;
-  color: #000;
+  color: #ffffff;
+}
+
+.contacts {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+
 }
 
 @media screen and (max-width: 1080px) {
