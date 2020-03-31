@@ -342,6 +342,26 @@ body {
   z-index: -1;
 }
 
+.portfolio__main h2{
+  font-size: 30px;
+  text-align: center;
+  padding: 150px 0 20px 0;
+}
+
+.portfolio__main h4{
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.portfolio__cards{
+  display: flex;
+}
+
+.portfolio__card{
+
+}
+
 footer {
   margin-top: 100px;
   background: #222222;
