@@ -23,12 +23,12 @@
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
-  <script src="js/script.js"></script>
 
   <title>Byte Studio - студия веб разработки</title>
 </head>
 
 <body>
+  <div class="tooltip"></div>
 <section>
   <div class="header">
     <div class="header__nav">
@@ -81,7 +81,23 @@
       <div class="calc">
         <h4>Расчитайте стоимость будещего сайта.</h4>
         <div class="calc_view_1">
-          <p>Выберите тип сайта</p>
+          <h3>Выберите тип сайта:</h3>
+          <div class="calc__site__list">
+            <ul>
+              <li class="calc__site__item"><i class="fa fa-star" aria-hidden="true"></i></i>Лэндинг пейдж</li>
+              <li class="calc__site__item"><i class="fa fa-star" aria-hidden="true"></i></i>Интернет магазин</li>
+              <li class="calc__site__item"><i class="fa fa-star" aria-hidden="true"></i></i>Личный блог</li>
+              <li class="calc__site__item"><i class="fa fa-star" aria-hidden="true"></i></i>Сайт для бизнеса</li>
+              <li class="calc__site__item"><i class="fa fa-star" aria-hidden="true"></i></i>Сайт - Визитка</li>
+              <li class="calc__site__item"><i class="fa fa-star" aria-hidden="true"></i></i>Корпоративный сайт</li>
+            </ul>
+          </div>
+          <div class="calc__site__button">
+            <button id="calc_next_view_2">Далее</button>
+          </div>
+        </div>
+        <div class="calc_view_2 hidden">
+          
         </div>
       </div>
     </div>
@@ -174,6 +190,7 @@
   </div>
 </footer>
 </body>
+<script src="js/script.js"></script>
 <script src="js/particles.min.js"></script>
 <script>
     $('#example2').typeIt({
