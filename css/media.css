@@ -1,0 +1,39 @@
+@media screen and (max-width: 1080px) {
+    .service__main {
+      padding-bottom: 700px;
+    }
+  
+    .service__cards {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+    .header__image__phone {
+      display: none;
+    }
+  
+    .service__main {
+      padding-bottom: 1500px;
+    }
+  
+    .header__image__main {
+      flex-basis: 100%;
+    }
+  
+    .header__nav {
+      flex-basis: 0;
+    }
+  
+    .header__nav__main {
+      display: none;
+    }
+  
+    .service__studio {
+      flex-direction: row;
+    }
+  
+    .service__cards {
+      width: 100%;
+    }
+  }
