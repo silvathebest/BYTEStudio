@@ -185,7 +185,7 @@ body {
 }
 
 .service__main {
-  background-color: #2196F3;
+  background: linear-gradient(#2196F3,#2196F3,#ddebf7,#fff);
   margin-top: 100px;
   position: relative;
   padding-bottom: 400px;
@@ -219,6 +219,8 @@ body {
 .service__cards {
   width: 25%;
   height: 100%;
+  position: relative;
+  overflow: hidden;
   background: #ffffff;
   box-shadow: 9px 10px 20px 2px rgba(0, 0, 0, .19);
   margin: 20px 20px 20px 20px;
@@ -236,6 +238,9 @@ body {
 
 .service__cards ul {
   margin-left: 30px;
+  padding-right: 20px;
+  font-size: 13px;
+  line-height: 15px;
   list-style-type: circle;
 }
 
@@ -245,15 +250,9 @@ body {
 
 .service__cards:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  transition: all 1s ease;
+  transform: translateY(-10px);
+  transition: .5s ;
 }
-
 #count__site {
   display: flex;
   justify-content: center;
@@ -364,6 +363,24 @@ footer {
 .footer__social i:hover {
   transition: .5s;
   color: #000;
+}
+.service__price{
+  position: absolute;
+  top: -16px;
+  width: 113px;
+  transform: rotateZ(45deg);
+  right: -44px;
+  height: 56px;
+  background: #84c5f3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  font-weight: 700;
+  padding-bottom: 7px;
+}
+.calc__main{
+  height:250px;
 }
 
 @media screen and (max-width: 1080px) {
