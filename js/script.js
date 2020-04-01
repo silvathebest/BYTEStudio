@@ -1,8 +1,11 @@
 $('.calc__site__item').on('click',function(){
     $('.calc__site__item').children().removeClass('check');
+    $('.calc__site__item').removeClass('calc__site__item__active');
     if(!$(this).children().hasClass('check')){
         $(this).children().addClass('check');
+        $(this).addClass('calc__site__item__active');
     }else{
+        $(this).removeClass('calc__site__item__active');
         $(this).children().removeClass('check');
     }
 });
@@ -11,8 +14,9 @@ $('#calc_next_view_2').on('click',function(){
     if($('.calc__site__item').children().hasClass('check')){
         $('.calc_view_1').addClass('hidden');
         $('.calc_view_2').removeClass('hidden');
+        $('#selected__site').text();
     }else{
-        console.log(0);
+        func_show_tooltip(obj,true);
     }
 });
 
@@ -32,23 +36,37 @@ $(".calc__site__item").on({
         func_show_tooltip(null,false);
     }
 });
-//TODO Доделать нормальное появление тултипа
-function func_show_tooltip(obj,bool,e){
-   let tooltip = $('.tooltip');
-   if(bool){
-    tooltip.css('top',(obj[0].offsetTop -100) + 'px');
-    tooltip.css('left',(obj[0].offsetLeft) + 'px');
-    var all = $(window).width();
-    var left = tooltip.offset().left;
-    var width = tooltip.outerWidth(true);
-    var offset = all - (left + width);
-    if(offset < 0){
-        tooltip.css('top',(obj[0].offsetTop - tooltip[0].offsetHeight) + 'px');
-        tooltip.css('left',(obj[0].offsetLeft - 120 ) + 'px');
+
+$(window).scroll(function(e){
+    let scrollTop = $(window).scrollTop();
+    if(scrollTop > 400){
+        $('nav').fadeIn();
+    }else{
+        $('nav').fadeOut();
     }
-    tooltip.fadeIn();
+});
+//Функция показа тултипа
+function func_show_tooltip(obj,bool,){
+   let tooltip = $('.tooltip');
+   
+   var width = tooltip.outerWidth(true);
+   if(bool){
+    let html = $('h5:contains('+obj[0].innerText+')').next('ul').clone();
+    tooltip.css('top',(obj[0].offsetTop + 80) + 'px');
+    tooltip.css('left',(obj[0].offsetLeft + width /2) + 'px');
+    var all = $(window).width();
+    var left = obj[0].offsetLeft;
+    var offset = all - (left + width);
+    if(offset < 30){
+        tooltip.css('top',(obj[0].offsetTop + 80) + 'px');
+        tooltip.css('left',(obj[0].offsetLeft - width ) + 'px');
+    }
+    if(html){
+        tooltip.html(html);
+        tooltip.fadeIn();
+    }
    }else{
     tooltip.fadeOut();
    }
-    
 }
+

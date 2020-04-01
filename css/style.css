@@ -221,19 +221,33 @@ body {
   height: 100%;
   position: relative;
   overflow: hidden;
-  background: #ffffff;
+  background: url(../img/seo-2.png);
+  background-color: white;
+  background-size: 20% 40%;
+  background-repeat: no-repeat;
   box-shadow: 9px 10px 20px 2px rgba(0, 0, 0, .19);
+  background-position: bottom right;
   margin: 20px 20px 20px 20px;
   border-radius: 2%;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   transition: all 1s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .service__cards h5 {
   text-align: center;
   font-size: 20px;
   margin: 10px 0 10px 0;
+}
+.service__cards button{
+  width: 35%;
+  border: 0;
+  background: #2196f3;
+  padding: 5px;
+  color: white;
+  cursor:pointer;
 }
 
 .service__cards ul {
@@ -242,6 +256,7 @@ body {
   font-size: 13px;
   line-height: 15px;
   list-style-type: circle;
+  flex-basis: 67%;
 }
 
 .service__cards ul > li {
@@ -249,7 +264,6 @@ body {
 }
 
 .service__cards:hover {
-  cursor: pointer;
   transform: translateY(-10px);
   transition: .5s ;
 }
@@ -394,7 +408,7 @@ footer {
 }
 .calc__image{
   background-image: url('../img/calc.png');
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   animation: calc_img 5s infinite linear ;
   
@@ -493,12 +507,41 @@ footer {
 .tooltip{
   min-width: 150px;
   max-width: 200px;
-  height: 100px;
   background: #000000b8;
   position: absolute;
   top: 0;
   border-radius: 10px;
   left: 0;
+  padding:25px;
+  display: none;
+  color:white;
+}
+.calc__site__item__active{
+  box-shadow: inset 1px 1px 10px -1px black;
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #222222;
+  height: 50px;
+  z-index: 99999;
+  justify-content: center;
+  align-items: center;
   display: none;
 }
-
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  list-style-type: none;
+  align-items: center;
+  margin: 12px auto;
+}
+nav ul>li>a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
