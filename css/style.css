@@ -33,7 +33,7 @@ body {
 
 .header__nav ul {
   list-style-type: none;
-  text-align: right;
+  text-align: center;
 }
 
 .nav__item {
@@ -43,7 +43,7 @@ body {
 }
 
 .nav__item:hover {
-  transform: translateX(-10px);
+  transform: translateY(-5px);
   transition: .5s;
 }
 
@@ -73,7 +73,7 @@ body {
 
 .header__social i {
   font-size: 25px;
-  color: #3F51B5;
+  color: #000;
   font-weight: 700;
   transition: .5s;
   cursor: pointer;
@@ -81,7 +81,7 @@ body {
 
 .header__social i:hover {
   transition: .5s;
-  color: #000;
+  color: #3F51B5;
 }
 
 .header__image {
@@ -96,14 +96,21 @@ body {
 }
 
 .header__nav__main {
-  margin-right: 20px;
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
-
+.nav__logo{
+  height:41px;
+}
+.header__logo{
+  width: 50%;
+}
+.header__logo img{
+  width:100%;
+}
 .header__image__line {
   position: absolute;
   width: 100%;

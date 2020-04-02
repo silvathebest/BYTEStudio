@@ -23,7 +23,6 @@
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
-
   <title>Byte Studio - студия веб разработки</title>
 </head>
 
@@ -31,7 +30,7 @@
   <div class="tooltip"></div>
   <nav>
     <ul>
-      <li><img src="img/logo.png" alt="logo"></li>
+      <li><img class="nav__logo" src="img/logo-dark.png" alt="logo"></li>
       <li><a href="#">Главная</a></li>
       <li><a href="#">Услуги</a></li>
       <li><a href="#">Портфолио</a></li>
@@ -43,8 +42,7 @@
     <div class="header__nav">
       <div class="header__nav__main">
         <div class="header__logo">
-          <!-- TODO Нарисовать норм логотип .png -->
-          <h2>Byte Studio</h2>
+         <img src="img/logo-light.png" alt="">
         </div>
         <div class="header__nav">
           <ul>
@@ -66,18 +64,7 @@
     <div class="header__image__main">
       <div id="particles-js" class="header__image"></div>
       <div class="header__image__content">
-        <div class="header__image__title">
-          <h2>Byte Studio</h2>
-          <div class="line__run">
-            <!-- TODO Придумать текст для бегущей строки -->
-            <p id="example2"></p>
-          </div>
-        </div>
-        <div class="header__image__phone">
-          <h4>+7 (908) 546 82 04</h4>
-          <h5>roy12612@gmail.com</h5>
-          <button class="but__call__back">Заказать звонок</button>
-        </div>
+
       </div>
       <div class="header__image__line"></div>
     </div>
@@ -195,7 +182,6 @@
   </div>
 </section>
 <footer>
-
   <div class="footer__social">
     <i class="fa fa-vk" aria-hidden="true"></i>
     <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -206,26 +192,5 @@
 </footer>
 </body>
 <script src="js/script.js"></script>
-<script src="js/particles.min.js"></script>
-<script>
-    $('#example2').typeIt({
-        speed: 80,
-        autoStart: false,
-    }).tiType('Разработка ')
-        .tiPause(150)
-        .tiType('сайтов ')
-        .tiPause(350)
-        .tiType('любой сложности')
-        .tiSettings({
-            speed: 300
-        })
-        .tiType('...')
-        .tiPause(1200)
-        .tiSettings({
-            speed: 50
-        })
-        .tiDelete()
-        .tiType('Быстро и надежно.');
-</script>
 
 </html>
