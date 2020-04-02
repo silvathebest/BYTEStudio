@@ -9,6 +9,23 @@
   }
   
   @media screen and (max-width: 720px) {
+    nav{
+      background: none;
+    }
+
+    nav ul{
+      display: none !important;
+    }
+
+    .icon{
+      float: right;
+      display: block;
+      color: #222222;
+      font-size: 25px;
+      text-decoration: none;
+      margin: 10px 10px;
+    }
+
     .header__image__phone {
       display: none;
     }
