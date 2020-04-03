@@ -23,13 +23,12 @@
   color: #ffffff;
   position: absolute;
   top: 53%;
-  text-align: center;
 }
 
 .loader {
   width: 3%;
   top: 45%;
-  margin-right: 10px;
+  margin-right: 12px;
   position: absolute;
   animation: 1s spin linear infinite;
 }
@@ -626,6 +625,10 @@ footer {
   box-shadow: inset 1px 1px 10px -1px black;
 }
 
+.execution__order {
+
+}
+
 .topnav {
   position: fixed;
   top: 0;
@@ -644,6 +647,10 @@ footer {
   color: #ffffff;
   padding-right: 50px;
   font-size: 20px;
+}
+
+.nav__description {
+  display: none;
 }
 
 .icon {
