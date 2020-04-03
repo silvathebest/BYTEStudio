@@ -10,19 +10,28 @@
   position: fixed;
   left: 0;
   top: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
-  background: black;
+  background: #000000;
   z-index: 999999;
 }
 
-.loader {
-  width: 10%;
-  left: 45%;
-  top: 45%;
+.preloader h2 {
+  color: #ffffff;
   position: absolute;
-  transform: translate(-50%, -50%);
-  animation: 2s spin infinite linear;
+  top: 53%;
+  text-align: center;
+}
+
+.loader {
+  width: 3%;
+  top: 45%;
+  margin-right: 10px;
+  position: absolute;
+  animation: 1s spin linear infinite;
 }
 
 .header {
@@ -51,7 +60,8 @@ body {
   list-style-type: none;
   text-align: center;
 }
-#service{
+
+#service {
   overflow: hidden;
 }
 
@@ -62,7 +72,8 @@ body {
   position: relative;
   width: 130px;
 }
-.nav__item:before{
+
+.nav__item:before {
   position: absolute;
   content: '<';
   top: 0;
@@ -75,10 +86,11 @@ body {
   font-size: 15px;
   justify-content: center;
   align-items: center;
-  transition:.5s;
+  transition: .5s;
   font-family: 'Arial black';
 }
-.nav__item:after{
+
+.nav__item:after {
   font-family: 'Arial black';
   position: absolute;
   content: '/>';
@@ -92,12 +104,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition:.5s;
+  transition: .5s;
 }
+
 .nav__item:hover:after,
-.nav__item:hover:before{
-  opacity:1;
-  transition:.5s;
+.nav__item:hover:before {
+  opacity: 1;
+  transition: .5s;
 }
 
 .nav__item > a {
@@ -156,7 +169,12 @@ body {
 }
 
 .nav__logo {
-  height: 41px;
+  height: 40px;
+  margin-top: 0 !important;
+}
+
+.nav__logo img {
+  height: 100%;
 }
 
 .header__logo {
@@ -608,116 +626,126 @@ footer {
   box-shadow: inset 1px 1px 10px -1px black;
 }
 
-nav {
+.topnav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background: #222222;
-  height: 50px;
-  z-index: 9999;
-  display: none;
-}
-
-nav ul {
+  height: 40px;
   display: flex;
   justify-content: space-around;
-  width: 80%;
-  list-style-type: none;
+  z-index: 9999;
   align-items: center;
-  margin: 5px auto;
 }
 
-nav ul > li > a {
-  color: white;
+.topnav a {
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
-  padding-right: 10px;
+  color: #ffffff;
+  padding-right: 50px;
+  font-size: 20px;
 }
 
 .icon {
   display: none;
 }
-.footer__main{
+
+.footer__main {
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:25px;
+  padding: 25px;
   margin: 0 auto;
 }
-.footer__content{
+
+.footer__content {
   flex-basis: 33%;
 }
-.footer__service{
- flex-basis: 35%;
-}
-.footer__site__map{
-  flex-basis: 23%;
-}
-.footer__logo{
-  width:25%;
+
+.footer__service {
+  flex-basis: 35%;
 }
 
-.footer__logo img{
+.footer__site__map {
+  flex-basis: 23%;
+}
+
+.footer__logo {
+  width: 25%;
+}
+
+.footer__logo img {
   width: 100%;
 }
-.footer__description{
+
+.footer__description {
   color: white;
   margin-top: 25px;
 }
-.footer__description p{
+
+.footer__description p {
   margin-top: 5px;
 }
-.footer__description a{
+
+.footer__description a {
   color: white;
   text-decoration: none;
 }
-.footer__site__map ul{
+
+.footer__site__map ul {
   list-style-type: none;
-  text-align: right; 
+  text-align: right;
 }
-.footer__site__map ul>li>a{
+
+.footer__site__map ul > li > a {
   text-decoration: none;
   color: #f2f2f2;
 }
-.footer__site__map ul>li{
-  margin:5px 0;
+
+.footer__site__map ul > li {
+  margin: 5px 0;
   cursor: pointer;
 }
-.footer__site__map h4{
-  color:white;
+
+.footer__site__map h4 {
+  color: white;
   text-align: right;
   margin-bottom: 15px;
   font-size: 18px;
 }
-.footer__service h4{
-  color:white;
+
+.footer__service h4 {
+  color: white;
   text-align: center;
   margin-bottom: 15px;
   font-size: 18px;
 }
-.footer__service__ul{
+
+.footer__service__ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footer__service__ul ul{
+
+.footer__service__ul ul {
   list-style-type: none;
-  text-align: left; 
+  text-align: left;
 }
-.footer__service__ul ul>li{
-  color:white;
-  padding:5px;
+
+.footer__service__ul ul > li {
+  color: white;
+  padding: 5px;
   cursor: pointer;
 }
-.footer__service__ul ul>li i{
-  color:#c2c2c2;
+
+.footer__service__ul ul > li i {
+  color: #c2c2c2;
   padding-right: 5px;
 }
-.footer__end{
-  color:#c3c3c3;
+
+.footer__end {
+  color: #c3c3c3;
   text-align: center;
   padding-bottom: 10px;
 }

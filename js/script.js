@@ -1,6 +1,16 @@
 window.onload = function () {
     let preloader = document.getElementById('preloader');
-   preloader.style.display = 'none';
+    preloader.style.display = 'none';
+};
+
+menu.onclick = function () {
+    let x = document.getElementById("nav");
+
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
 };
 
 
