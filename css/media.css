@@ -6,7 +6,48 @@
     .service__cards {
       width: 40%;
     }
+    .footer__content {
+      flex-basis: 100%;
+      text-align: center;
   }
+  .footer__logo{
+    margin: 0 auto;
+  }
+  .footer__service{
+    flex-basis: 350px;
+  }
+  .footer__site__map {
+    flex-basis: 150px;
+}
+.footer__main{
+  flex-wrap: wrap;
+}
+.footer__social{margin: 10px auto;}
+.footer__service{
+  flex-basis: 50%;
+  margin-top: 25px;
+}
+.footer__site__map{
+  margin-top: 25px;
+  flex-basis: 50%;
+}
+.footer__site__map h4{
+  text-align: center;
+}
+.footer__site__map ul{
+  text-align: center;
+}
+}
+@media screen and (max-width: 875px) {
+  .footer__service{
+    flex-basis: 100%;
+    margin-top: 25px;
+  }
+  .footer__site__map{
+    margin-top: 25px;
+    flex-basis: 100%;
+  }
+}
   
   @media screen and (max-width: 720px) {
     nav{
