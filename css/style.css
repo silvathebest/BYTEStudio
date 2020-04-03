@@ -25,15 +25,6 @@
   animation: 2s spin infinite linear;
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .header {
   display: flex;
   height: 350px;
@@ -59,6 +50,9 @@ body {
 .header__nav ul {
   list-style-type: none;
   text-align: center;
+}
+#service{
+  overflow: hidden;
 }
 
 .nav__item {
@@ -597,24 +591,6 @@ footer {
   display: none !important;
 }
 
-@keyframes calc_img {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(5deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 .tooltip {
   min-width: 150px;
   max-width: 200px;
@@ -693,6 +669,10 @@ nav ul > li > a {
 }
 .footer__description p{
   margin-top: 5px;
+}
+.footer__description a{
+  color: white;
+  text-decoration: none;
 }
 .footer__site__map ul{
   list-style-type: none;
