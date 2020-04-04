@@ -625,10 +625,6 @@ footer {
   box-shadow: inset 1px 1px 10px -1px black;
 }
 
-.execution__order {
-
-}
-
 .topnav {
   position: fixed;
   top: 0;
@@ -655,6 +651,31 @@ footer {
 
 .icon {
   display: none;
+}
+
+.execution__order {
+  color: black;
+  height: 400px;
+}
+
+.execution__order h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.order__cards {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.order__card {
+  background: #222222;
+  height: 100%;
+  border-radius: 5%;
+  margin: 0 30px 0 30px;
+  flex-basis: 20%;
 }
 
 .footer__main {
