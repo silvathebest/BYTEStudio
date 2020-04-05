@@ -549,7 +549,6 @@ footer {
   text-align: center;
   word-break: break-word;
   font-size: 12px;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: inherit;
@@ -677,6 +676,17 @@ footer {
   box-shadow: 9px 10px 20px 2px rgba(0, 0, 0, .19);
   flex-basis: 25%;
   cursor: pointer;
+  transition: .5s;
+}
+
+.order__card:hover {
+  transform: translateX(+10px);
+  transition: .5s;
+}
+
+.order__card:last-child:hover{
+  transform: translateY(-10px);
+  transition: .5s;
 }
 
 .order__card h4 {
@@ -694,7 +704,7 @@ footer {
   margin-top: 20px;
 }
 
-.order__card p{
+.order__card p {
   color: #ffffff;
   font-size: 14px;
   margin: 10px;
@@ -709,6 +719,7 @@ footer {
   margin-top: 75px;
   transition: .5s;
   flex-basis: 8%;
+  z-index: 2;
 }
 
 .arrow-1 div {
@@ -854,18 +865,19 @@ footer {
   padding-bottom: 10px;
 }
 
-.left__navigation{
+.left__navigation {
   position: fixed;
-    top: 0;
-    left: 0;
-    width: 70px;
-    display: flex;
-    bottom: 0;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 9999999;
+  top: 0;
+  left: 0;
+  width: 70px;
+  display: flex;
+  bottom: 0;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 9999999;
 }
-.left__navigation ul{
+
+.left__navigation ul {
   height: 30%;
   position: relative;
   flex-direction: column;
@@ -874,15 +886,17 @@ footer {
   list-style-type: none;
   z-index: 9999999;
 }
-.left__navigation ul>li{
+
+.left__navigation ul > li {
   font-weight: 700;
   position: relative;
-  padding:10px;
+  padding: 10px;
   background: #3f51b5;
-  color:white;
+  color: white;
   z-index: 9999999;
   cursor: pointer;
 }
+
 /*.left__navigation ul:before{
   position: absolute;
   top:-35px;
@@ -901,9 +915,9 @@ footer {
   height: 2px;
   border-bottom: 2px dotted black;
 }*/
-.navigate_active{
+.navigate_active {
   font-weight: 700;
-  width:150%;
+  width: 150%;
   text-align: center;
-  
+
 }
