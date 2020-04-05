@@ -53,14 +53,38 @@ $(".calc__site__item").on({
     }
 });
 
+//Скролл
 $(window).scroll(function (e) {
     let scrollTop = $(window).scrollTop();
+    get_position_scroll(scrollTop);
     if (scrollTop > 400) {
         $('nav').fadeIn();
     } else {
         $('nav').fadeOut();
     }
 });
+
+function get_position_scroll(scroll){
+    $('.navigate_active').removeClass('navigate_active');
+    $('.navigation').each(function(id, node){
+    let all_offset =  $(node).offset().top + $(node)[0].offsetHeight;
+    if(scroll >= $(node).offset().top  && scroll <= all_offset){
+       let id_node =  node.getAttribute('id').toString();
+       $('.left__navigation_id').each(function(id,node){
+        if(node.getAttribute('id').split('_')[1] === id_node){
+            node.classList.add('navigate_active');
+        }
+       });
+    }
+    });
+}
+$('.left__navigation_id').click(function(){
+    console.log( $('#' + $(this).attr('id').split('_')[1]).offset());
+    $('html, body').animate({ 
+        scrollTop: $('#' + $(this).attr('id').split('_')[1]).offset().top 
+   }, 1000);
+});
+//
 
 //Функция показа тултипа
 function func_show_tooltip(obj, bool,) {
