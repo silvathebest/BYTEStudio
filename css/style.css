@@ -624,17 +624,19 @@ footer {
 .calc__site__item__active {
   box-shadow: inset 1px 1px 10px -1px black;
 }
-
+nav{
+  display: none;
+}
 .topnav {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   background: #222222;
-  height: 40px;
+  height: 60px;
   display: flex;
   justify-content: space-around;
-  z-index: 9999;
+  z-index: 999999999999999;
   align-items: center;
 }
 
@@ -642,7 +644,7 @@ footer {
   text-decoration: none;
   color: #ffffff;
   padding-right: 50px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .nav__description {

@@ -5,11 +5,12 @@ window.onload = function () {
 
 menu.onclick = function () {
     let x = document.getElementById("nav");
-
     if (x.className === "topnav") {
         x.className += " responsive";
+        $('body').css('overflow','hidden');
     } else {
         x.className = "topnav";
+        $('body').css('overflow','auto');
     }
 };
 
