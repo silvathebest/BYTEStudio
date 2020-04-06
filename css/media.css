@@ -1,7 +1,4 @@
 @media screen and (max-width: 1080px) {
-  .service__main {
-    padding-bottom: 700px;
-  }
 
   .service__cards {
     width: 40%;
@@ -49,6 +46,18 @@
   .footer__site__map ul {
     text-align: center;
   }
+
+  .order__card p {
+    font-size: 13px;
+  }
+
+  .creating__card {
+    width: 40%;
+  }
+
+  .creating__card p {
+    height: 25%;
+  }
 }
 
 @media screen and (max-width: 875px) {
@@ -61,6 +70,11 @@
     margin-top: 25px;
     flex-basis: 100%;
   }
+
+  .order__card p {
+    font-size: 12px;
+  }
+
 }
 
 @media screen and (max-width: 720px) {
@@ -137,10 +151,6 @@
     display: none;
   }
 
-  .service__main {
-    padding-bottom: 1500px;
-  }
-
   .header__image__main {
     flex-basis: 100%;
   }
@@ -160,4 +170,46 @@
   .service__cards {
     width: 100%;
   }
+
+  .left__navigation {
+    display: none;
+  }
+
+  .order__cards {
+    flex-direction: column;
+  }
+
+  .arrow-1 {
+    display: none;
+  }
+
+  .order__card {
+    width: 90%;
+    border-radius: 20px;
+    margin: 20px 5% 0 5%;
+    transition: .5s;
+  }
+
+  .order__card p {
+    font-size: 20px;
+  }
+
+  .order__card:hover {
+    transform: translateY(+10px);
+    transition: .5s;
+  }
+
+  .order__card:last-child:hover {
+    transform: translateY(-10px);
+    transition: .5s;
+  }
+
+  .creating__card {
+    width: auto;
+  }
+
+  .creating__card p {
+    height: auto;
+  }
+
 }
